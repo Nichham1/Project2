@@ -1,0 +1,11 @@
+.fl-page {
+    position: relative;
+    min-height: auto;
+    padding-bottom: 60px;
+    bottom: -50px; /* Should be equal to the height of your footer */
+  }
+  .fl-page-footer-wrap {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+  }
