@@ -15,7 +15,7 @@
     <!----personal stylesheet ---->
     <link rel="stylesheet" href="css/site.css" />
 
-    <title>Attendace - <?php echo $title ?></title>
+    <title>Attendance - <?php echo $title ?></title>
 
   </head>
   <!----- navigation bar ----->
