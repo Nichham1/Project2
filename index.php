@@ -38,13 +38,13 @@ require_once'db/conn.php';
         </div>
 
         <div class="col">
-            <label for="selectionex">Area of Expertise</label>
-            <select class="form-control" id="selectionex" name="selectionex">
-                <option> Database Administrator</option>
-                <option>Software Developer </option>
-                <option>Web Administrator</option>
-                <option>Network Engineer</option>
-                <option>Other</option>
+            <label for="speciality">Area of Expertise</label>
+            <select class="form-control" id="speciality" name="speciality">
+                <option value='1'> Database Administrator</option>
+                <option >Software Developer </option>
+                <option >Web Administrator</option>
+                <option >Network Engineer</option>
+                <option >Other</option>
             </select>
         </div>
     </div>
@@ -59,7 +59,7 @@ require_once'db/conn.php';
 
     <div class="form-group">
         <label for="contactnumber">Contact number</label>
-        <input type="number" class="form-control" id="contactnumber" aria-describedby="phoneHelp" name="contactnumber">
+        <input type="text" class="form-control" id="contactnumber" aria-describedby="phoneHelp" name="contactnumber">
         <small id="phoneHelp" class="form-text text-muted">We won't call you so don't ask.</small>
     </div>
 
@@ -76,7 +76,7 @@ require_once'db/conn.php';
         <label class="form-check-label" for="exampleCheck1">Check me out</label>
     </div> ---->
 
-    <button type="submit" class="btn btn-success btn-block" name="completion">Submit</button>
+    <button name="completion" type="submit" class="btn btn-success btn-block" >Submit</button>
   
 </form>
 
