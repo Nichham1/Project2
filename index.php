@@ -1,19 +1,21 @@
 <?php 
 $title = 'Registration Form';
 require_once'includes/header.php';
+require_once'db/conn.php';
 ?>
+
 <!------
-first name 
-last name
-date of birth (use date picker)
-specialty (data base admin soft developer web admin )
-email address 
-contact number 
+- first name 
+- last name
+- date of birth (use date picker)
+- specialty (data base admin soft developer web admin )
+- email address 
+- contact number 
 
 ----->
-<h1 class="text-center" >Registration for IT Confrence</h1>
+<h1 class="text-center" >Registration for IT Conference </h1>
 
-<form class="container" method="get" action="success.php">
+<form class="container" method="post" action="success.php">
     
     <div class="form-row">
         <div class="col">
@@ -36,7 +38,7 @@ contact number
         </div>
 
         <div class="col">
-            <label for="selectionex">Area of expertiese</label>
+            <label for="selectionex">Area of Expertise</label>
             <select class="form-control" id="selectionex" name="selectionex">
                 <option> Database Administrator</option>
                 <option>Software Developer </option>
@@ -56,17 +58,19 @@ contact number
     </div>
 
     <div class="form-group">
-        <label for="contactnumber">Phone number</label>
+        <label for="contactnumber">Contact number</label>
         <input type="number" class="form-control" id="contactnumber" aria-describedby="phoneHelp" name="contactnumber">
         <small id="phoneHelp" class="form-text text-muted">We won't call you so don't ask.</small>
     </div>
 
+      <!----
     <div class="form-group">
         <label for="password">Password</label>
         <input type="password" class="form-control" id="password" name="password">
         <small id="passwordHelp" class="form-text text-muted">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</small>
     </div>
-    
+    ---->
+
     <!----<div class="form-group form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Check me out</label>

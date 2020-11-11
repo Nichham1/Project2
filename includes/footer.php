@@ -14,7 +14,13 @@
     <script>
 
     $( function() {
-      $( "#dob" ).datepicker();
+      $( "#dob" ).datepicker({
+      changeMonth: true,
+      changeYear: true,
+      yearRange: "-100:+0",
+
+    });
+
     } );
   </script>
 
